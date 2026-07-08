@@ -8,6 +8,9 @@
 /** Every CTA on the page points here. */
 export const MAILTO = "mailto:me@adampang.com?subject=Company%20University";
 
+/** The /pilot offer CTA: subject line "Pilot" so replies are instantly routable. */
+export const PILOT_MAILTO = "mailto:me@adampang.com?subject=Pilot";
+
 export type CatalogTag = "live" | "inMotion" | "events" | "open";
 
 export interface CatalogRow {
@@ -94,6 +97,7 @@ export const content = {
       { label: "Proof", href: "#proof" },
       { label: "Companies", href: "/board" },
       { label: "Skills", href: "/skills" },
+      { label: "Pilot", href: "/pilot" },
     ],
     cta: "Claim your college",
   },
@@ -305,6 +309,90 @@ export const content = {
         open: true,
       },
     ] as Member[],
+  },
+
+  /* --------------------------------------------------- · pilot --- */
+  /* The /pilot route: the one-page priced offer, built to be DMed
+     to a warm company lead. One price, one CTA. */
+  pilot: {
+    eyebrow: "The pilot · one page, one price",
+    heading: "The 6-week Company College pilot.",
+    price: "$60,000",
+    priceNote: "One cohort, all-in. The first workshop is free before you commit.",
+    sub: "Curriculum built around your product, a weekly cohort at Network School, a flagship demo day, and a hiring funnel from the graduates.",
+    whatYouGetLabel: "What you get",
+    whatYouGet: [
+      {
+        lead: "A curriculum built around your product.",
+        detail: "Reverse-engineered from your docs and your open roles, so every session maps to real usage and real hiring needs.",
+      },
+      {
+        lead: "A weekly cohort of shipping builders.",
+        detail: "Selected from the Network School campus and our channels. They build on your product every week, in person.",
+      },
+      {
+        lead: "A flagship demo day.",
+        detail: "The cohort demos live in front of the campus and your team. Your judges, your rubric.",
+      },
+      {
+        lead: "A hiring funnel from the graduates.",
+        detail: "A ranked, observed shortlist. Top builders fast-track to interviews with your team: signal you watched get built, not a resume pile.",
+      },
+      {
+        lead: "A standing community layer.",
+        detail: "The cohort’s channel, content, and champions stay alive on campus after the six weeks.",
+      },
+      {
+        lead: "A one-page monthly report.",
+        detail: "KPIs per session: attendance, signups, things shipped, feedback. Designed to be forwarded internally.",
+      },
+    ] as OfferItem[],
+    arcLabel: "The 6-week arc",
+    arc: [
+      {
+        label: "Week 1",
+        title: "Foundations",
+        note: "Setup to first wins. Every attendee leaves activated on your product.",
+      },
+      {
+        label: "Weeks 2 to 3",
+        title: "Core builds",
+        note: "Hands-on with the workflows that matter. Real usage, real questions, real feedback.",
+      },
+      {
+        label: "Week 4",
+        title: "Advanced build",
+        note: "Power-user territory. Builders ship real projects on your stack.",
+      },
+      {
+        label: "Week 5",
+        title: "Showcase",
+        note: "Community demo night. Champions emerge, content compounds.",
+      },
+      {
+        label: "Week 6",
+        title: "Flagship demo day",
+        note: "Your team in the room, a rubric you co-sign, and a shortlist to interview.",
+      },
+    ] as LadderRung[],
+    proofLabel: "Proof",
+    proof: [
+      {
+        name: "Zcash School",
+        href: "https://zcash.school",
+        domain: "zcash.school",
+        note: "Live · funded under Zcash community grants",
+      },
+      {
+        name: "Notion College",
+        href: "https://notioncollege.vercel.app",
+        domain: "notioncollege.vercel.app",
+        note: "Signed · 300+ person event with Notion at Network School",
+      },
+    ] as ProofLink[],
+    cta: "Book the pilot",
+    smallPrint:
+      "Miss the monthly KPI bar we set together and that month is free. One company per category, three schools at a time.",
   },
 
   /* --------------------------------------------------- · board --- */

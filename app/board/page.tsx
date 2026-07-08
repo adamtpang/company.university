@@ -48,6 +48,12 @@ export default function BoardPage() {
             >
               Proof
             </a>
+            <a
+              href="/pilot"
+              className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-paper/55 transition-colors hover:text-paper"
+            >
+              Pilot
+            </a>
           </nav>
           <Cta href={MAILTO} size="sm">
             {content.nav.cta}

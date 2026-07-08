@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
-import { content, MAILTO } from "@/content";
+import { content, PILOT_MAILTO } from "@/content";
 import { Mark, Cta } from "@/components/brand";
-import SkillsBoard from "@/components/SkillsBoard";
+import PilotOffer from "@/components/PilotOffer";
 
 export const metadata: Metadata = {
-  title: "The Skill Market · Company University",
+  title: "The Pilot · Company University",
   description:
-    "The most in-demand skills, ranked by a demand score built from growth, pay, and talent scarcity. Earn the cert, get matched to a company on the board.",
+    "The 6-week Company College pilot: $60,000. Curriculum built around your product, a weekly cohort at Network School, a flagship demo day, and a hiring funnel from the graduates.",
 };
 
-export default function SkillsPage() {
+const NAV = [
+  { label: "Home", href: "/" },
+  { label: "Companies", href: "/board" },
+  { label: "Skills", href: "/skills" },
+];
+
+export default function PilotPage() {
   return (
     <>
       {/* utility strip */}
@@ -29,43 +35,31 @@ export default function SkillsPage() {
               {content.name}
             </span>
           </a>
-          <nav
-            aria-label="Sections"
-            className="hidden items-center gap-8 md:flex"
-          >
-            <a
-              href="/"
-              className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-paper/55 transition-colors hover:text-paper"
-            >
-              Home
-            </a>
-            <a
-              href="/board"
-              className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-paper/55 transition-colors hover:text-paper"
-            >
-              Companies
-            </a>
-            <a
-              href="/skills"
-              className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-paper transition-colors hover:text-paper"
-            >
-              Skills
-            </a>
+          <nav aria-label="Sections" className="hidden items-center gap-8 md:flex">
+            {NAV.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-paper/55 transition-colors hover:text-paper"
+              >
+                {l.label}
+              </a>
+            ))}
             <a
               href="/pilot"
-              className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-paper/55 transition-colors hover:text-paper"
+              className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-paper"
             >
               Pilot
             </a>
           </nav>
-          <Cta href={MAILTO} size="sm">
-            {content.nav.cta}
+          <Cta href={PILOT_MAILTO} size="sm">
+            {content.pilot.cta}
           </Cta>
         </div>
       </header>
 
       <main>
-        <SkillsBoard />
+        <PilotOffer />
       </main>
 
       {/* footer */}
@@ -73,9 +67,9 @@ export default function SkillsPage() {
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-5 px-6 py-14 text-center">
           <Mark className="h-8 w-8" base="var(--color-accent-bright)" />
           <p className="max-w-md font-serif text-[1.7rem] leading-snug">
-            Pick the skill. Earn the cert. Get matched to the company.
+            One cohort. Six weeks. Your company becomes a school.
           </p>
-          <Cta href={MAILTO}>Get matched</Cta>
+          <Cta href={PILOT_MAILTO}>{content.pilot.cta}</Cta>
           <div className="mt-6 space-y-1.5 font-mono text-[9.5px] uppercase tracking-[0.18em] text-paper/35">
             {content.footer.smallPrint.map((line) => (
               <p key={line}>{line}</p>
