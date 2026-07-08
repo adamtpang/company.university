@@ -524,6 +524,12 @@ function FooterCta() {
           {c.smallPrint.map((line) => (
             <p key={line}>{line}</p>
           ))}
+          <a
+            href="https://adampang.com"
+            className="transition-colors hover:text-paper/60"
+          >
+            Built by Adam Pangelinan
+          </a>
         </div>
       </div>
     </footer>

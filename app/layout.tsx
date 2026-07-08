@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { IBM_Plex_Mono, Newsreader, Public_Sans } from "next/font/google";
 import "./globals.css";
 import { content } from "@/content";
@@ -58,6 +59,7 @@ export default function RootLayout({
           <style>{`.reveal{opacity:1;transform:none}.rise{animation:none;opacity:1}`}</style>
         </noscript>
         {children}
+        <Analytics />
       </body>
     </html>
   );
