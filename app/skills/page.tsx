@@ -52,6 +52,12 @@ export default function SkillsPage() {
               Skills
             </a>
             <a
+              href="/getin"
+              className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-paper/55 transition-colors hover:text-paper"
+            >
+              Get in
+            </a>
+            <a
               href="/pilot"
               className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-paper/55 transition-colors hover:text-paper"
             >

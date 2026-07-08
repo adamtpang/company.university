@@ -97,6 +97,7 @@ export const content = {
       { label: "Proof", href: "#proof" },
       { label: "Companies", href: "/board" },
       { label: "Skills", href: "/skills" },
+      { label: "Get in", href: "/getin" },
       { label: "Pilot", href: "/pilot" },
     ],
     cta: "Claim your college",

@@ -13,6 +13,7 @@ const NAV = [
   { label: "Home", href: "/" },
   { label: "Companies", href: "/board" },
   { label: "Skills", href: "/skills" },
+  { label: "Get in", href: "/getin" },
 ];
 
 export default function PilotPage() {
