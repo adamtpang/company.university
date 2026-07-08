@@ -1,0 +1,17 @@
+# Company University (companyuniversity.vercel.app)
+
+> Every company gets a school: the university layer for top companies, hosted at Network School.
+
+Company University runs a company's education-to-employment pipeline for them. Each partner company gets a college inside Network School, Balaji Srinivasan's live/work campus in Forest City, about 40 minutes from Singapore. Education goes in; power users, advocates, and hires come out. Weekly hands-on classes manufacture power users, a permanent campus presence gives APAC reach, beta pools and feedback nights feed product research, and a flagship demo day doubles as a recruiting funnel. The company spends 30 minutes a month; the program runs curriculum, ops, rooms, and follow-up.
+
+This is a single marketing site plus a ranked board, not a product with logins. It is early: pilots are live (Zcash School, funded under Zcash community grants) and in motion (Notion College), with a few more companies in talks. The pitch is to rent the whole layer instead of building five teams. Every CTA opens an email to me@adampang.com.
+
+## Key links
+- [Home](https://companyuniversity.vercel.app/): the pitch, the six problems it solves, how the system works, the offer, proof, and team.
+- [Proof](https://companyuniversity.vercel.app/#proof): track record and the Zcash School cohort dashboard.
+- [Offer](https://companyuniversity.vercel.app/#offer): the terms, 30 minutes a month, first workshop free, one company per category.
+- [The Board](https://companyuniversity.vercel.app/board): the world's top companies ranked by market cap, each treated as an open college to claim.
+
+## About
+- Part of adam.inc, the internet portfolio of Adam Pangelinan (Anchor Marianas LLC).
+- Builder: https://adampang.com
