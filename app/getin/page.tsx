@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { content, MAILTO } from "@/content";
+import { content, MAILTO, JOIN_MAILTO } from "@/content";
 import { Mark, Cta } from "@/components/brand";
 import { companies, GETIN_INTRO, THE_METHOD } from "@/getin";
 
@@ -65,6 +65,35 @@ export default function GetInIndex() {
                   <p className="mt-1.5 text-[12px] leading-5 text-ink/55">{s.desc}</p>
                 </div>
               ))}
+            </div>
+
+            {/* the deal: free until hired */}
+            <div className="mt-12 border border-line bg-accent/5 p-6 sm:p-8">
+              <p className="font-mono text-[10px] font-medium uppercase tracking-[0.24em] text-accent">
+                {content.deal.eyebrow}
+              </p>
+              <h2 className="mt-3 font-serif text-[clamp(1.6rem,3.5vw,2.2rem)] leading-[1.08] tracking-[-0.01em]">
+                {content.deal.heading}
+              </h2>
+              <p className="mt-3 max-w-xl text-[14px] leading-6 text-ink/65">
+                {content.deal.sub}
+              </p>
+              <div className="mt-6 grid gap-px border border-line bg-line sm:grid-cols-3">
+                {content.deal.terms.map((t) => (
+                  <div key={t.lead} className="bg-paper p-5">
+                    <p className="font-serif text-[1.1rem] leading-snug">{t.lead}</p>
+                    <p className="mt-1.5 text-[12.5px] leading-5 text-ink/55">
+                      {t.detail}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-6 flex flex-wrap items-center gap-5">
+                <Cta href={JOIN_MAILTO}>{content.deal.cta}</Cta>
+                <p className="max-w-sm text-[11px] italic leading-5 text-ink/45">
+                  {content.deal.smallPrint}
+                </p>
+              </div>
             </div>
 
             {/* the doors */}

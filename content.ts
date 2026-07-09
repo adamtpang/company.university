@@ -11,6 +11,9 @@ export const MAILTO = "mailto:me@adampang.com?subject=Company%20University";
 /** The /pilot offer CTA: subject line "Pilot" so replies are instantly routable. */
 export const PILOT_MAILTO = "mailto:me@adampang.com?subject=Pilot";
 
+/** The builder-side CTA: subject line "Join" so student replies route separately. */
+export const JOIN_MAILTO = "mailto:me@adampang.com?subject=Join%20a%20school";
+
 export type CatalogTag = "live" | "inMotion" | "events" | "open";
 
 export interface CatalogRow {
@@ -394,6 +397,35 @@ export const content = {
     cta: "Book the pilot",
     smallPrint:
       "Miss the monthly KPI bar we set together and that month is free. One company per category, three schools at a time.",
+  },
+
+  /* ---------------------------------------------------- · deal --- */
+  /* Student-side pricing, App Academy style: free until placed.
+     A FLAT success fee, never a percentage of income. Fixed-dollar
+     deferred tuition is the defensible version of this model; income
+     share agreements are what drew the CFPB action on BloomTech.
+     Change the fee by editing one line below. */
+  deal: {
+    eyebrow: "The deal for builders",
+    heading: "Free until you’re hired.",
+    sub: "You pay nothing to join a school. Build on the company’s product, demo at the flagship, fast-track to interviews. If a school places you, you pay a flat fee once you’re earning. No job, no bill.",
+    terms: [
+      {
+        lead: "$0 upfront.",
+        detail: "Join a school, build every week, demo at the flagship. Workshops and events stay free.",
+      },
+      {
+        lead: "Get hired through your school.",
+        detail: "Top builders fast-track to interviews with the company. Not a guarantee: a funnel built on work they watched you ship.",
+      },
+      {
+        lead: "Then $2,500, flat.",
+        detail: "A one-time success fee after you start earning. Not a loan, no interest, and never a percentage of your income.",
+      },
+    ] as OfferItem[],
+    cta: "Join a school",
+    smallPrint:
+      "Flat success fee, agreed in writing before you enroll. If you never get hired through a school, you never pay.",
   },
 
   /* --------------------------------------------------- · board --- */
