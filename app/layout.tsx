@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { IBM_Plex_Mono, Newsreader, Public_Sans } from "next/font/google";
 import "./globals.css";
 import { content } from "@/content";
+import { Providers } from "./providers";
 
 const newsreader = Newsreader({
   subsets: ["latin"],
@@ -58,7 +59,7 @@ export default function RootLayout({
         <noscript>
           <style>{`.reveal{opacity:1;transform:none}.rise{animation:none;opacity:1}`}</style>
         </noscript>
-        {children}
+        <Providers>{children}</Providers>
         <Analytics />
       </body>
     </html>

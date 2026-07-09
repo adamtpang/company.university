@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { content, MAILTO, JOIN_MAILTO } from "@/content";
 import { Mark, Cta } from "@/components/brand";
+import { GetInLink } from "@/components/GetInLink";
 import { companies, GETIN_INTRO, THE_METHOD } from "@/getin";
 
 export const metadata: Metadata = {
@@ -119,9 +120,9 @@ export default function GetInIndex() {
                       <td className="hidden px-5 py-3.5 text-right font-mono text-[11px] tabular-nums text-ink/70 sm:table-cell">{c.cap}</td>
                       <td className="hidden px-5 py-3.5 text-left text-[12px] text-ink/70 md:table-cell">{c.tag}</td>
                       <td className="px-5 py-3.5 text-right">
-                        <a href={`/getin/${c.slug}`} className="font-mono text-[10px] uppercase tracking-[0.08em] text-accent transition-colors hover:text-accent-deep hover:underline">
+                        <GetInLink href={`/getin/${c.slug}`} company={c.slug} className="font-mono text-[10px] uppercase tracking-[0.08em] text-accent transition-colors hover:text-accent-deep hover:underline">
                           How to get in →
-                        </a>
+                        </GetInLink>
                       </td>
                     </tr>
                   ))}
