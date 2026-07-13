@@ -47,6 +47,33 @@ export const viewport: Viewport = {
   themeColor: "#191918",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EducationalOrganization",
+      "@id": `${content.url}#organization`,
+      name: content.name,
+      url: content.url,
+      description: content.description,
+      slogan: "Every company gets a school.",
+      location: {
+        "@type": "Place",
+        name: "Network School",
+        address: "Forest City, near Singapore",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${content.url}#website`,
+      url: content.url,
+      name: content.name,
+      description: content.description,
+      publisher: { "@id": `${content.url}#organization` },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -56,6 +83,10 @@ export default function RootLayout({
       className={`${newsreader.variable} ${publicSans.variable} ${plexMono.variable}`}
     >
       <body className="bg-ink font-sans text-paper">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <noscript>
           <style>{`.reveal{opacity:1;transform:none}.rise{animation:none;opacity:1}`}</style>
         </noscript>

@@ -520,16 +520,32 @@ function FooterCta() {
           </div>
         </Reveal>
 
-        <div className="mt-20 flex flex-col items-center justify-between gap-3 border-t border-paper/10 pt-8 text-center font-mono text-[9.5px] uppercase tracking-[0.18em] text-paper/35 sm:flex-row sm:text-left">
-          {c.smallPrint.map((line) => (
-            <p key={line}>{line}</p>
-          ))}
-          <a
-            href="https://adampang.com"
-            className="transition-colors hover:text-paper/60"
-          >
-            Built by Adam Pangelinan
-          </a>
+        <div className="mt-20 border-t border-paper/10 pt-8">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-mono text-[9.5px] uppercase tracking-[0.18em] text-paper/40">
+            <a href="/terms" className="transition-colors hover:text-paper/70">
+              Terms
+            </a>
+            <a href="/privacy" className="transition-colors hover:text-paper/70">
+              Privacy
+            </a>
+            <a
+              href="https://adam.gives"
+              className="transition-colors hover:text-paper/70"
+            >
+              The menu · adam.gives
+            </a>
+            <a
+              href="https://adampang.com"
+              className="transition-colors hover:text-paper/70"
+            >
+              The board · adampang.com
+            </a>
+          </div>
+          <div className="mt-4 flex flex-col items-center gap-1.5 text-center font-mono text-[9.5px] uppercase tracking-[0.18em] text-paper/35">
+            {c.smallPrint.map((line) => (
+              <p key={line}>{line}</p>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
