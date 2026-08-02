@@ -1,0 +1,19 @@
+# repos.yaml v0 — see github.com/adamtpang/repo-protocol
+repo: company.university
+is: Every company gets a school, plus a live in-demand-skills board.
+url: https://companyuniversity.vercel.app
+cluster: talent-stack
+ranks: skills
+
+provides:
+  - skills-board: live in-demand skill demand signal
+
+stack: [next, posthog]
+
+kin:
+  - repo: skill.supply
+    why: company.university names the demand; skill.supply supplies the people
+  - repo: darktalent.tech
+    why: shares the skill taxonomy used for scoring talent
+
+canon: adamtpang/repo-protocol
