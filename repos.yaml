@@ -6,7 +6,9 @@ cluster: talent-stack
 ranks: skills
 
 provides:
-  - skills-board: live in-demand skill demand signal
+  - id: skills-board
+    what: live in-demand skill demand signal
+    at: app
 
 stack: [next, posthog]
 
