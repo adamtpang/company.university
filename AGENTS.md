@@ -1,3 +1,14 @@
+<!-- BEGIN:summon-standard -->
+Summon standard: this company must pass the six readiness gates in `summon.company/SUMMON_COMPANY_STANDARD.md` (Outcome, Evidence, Workspace, Organization, Skills, Runtime). Read `NORTH_STAR.md`, `EVIDENCE.md`, `company/ORGANIZATION.md`.
+<!-- END:summon-standard -->
+
+<!-- BEGIN:grok-chat-continuation -->
+Grok chat continuation: read `GROK_CONTINUE_FROM_CLAUDE.md` and/or `GROK_CONTINUE_FROM_CODEX.md` when resuming in Grok. Refresh with `node .grok/sync-to-grok.js` from Aether root.
+<!-- END:grok-chat-continuation -->
+<!-- BEGIN:claude-chat-continuation -->
+Claude chat continuation: read `CODEX_CONTINUE_FROM_CLAUDE.md` to resume from the latest local Claude Code sessions for this project.
+<!-- END:claude-chat-continuation -->
+
 <!-- BEGIN:claude-codex-sync -->
 # Claude/Codex sync
 
@@ -7,12 +18,6 @@ If this file contains older project context that conflicts with `CLAUDE.md`, pre
 <!-- END:claude-codex-sync -->
 
 <!-- BEGIN:imported-claude-context -->
-# Imported Claude context
-
-Copied from `CLAUDE.md` on 2026-07-07 so Codex starts with the same project context Claude Code used. Keep `CLAUDE.md` as the source of truth and refresh this block after meaningful Claude-side progress.
-
-<!-- SOURCE: CLAUDE.md -->
-
 # CLAUDE.md - company.university
 
 Context for Claude Code, Codex, and humans working in this folder.
@@ -108,4 +113,6 @@ All in `content.ts`. Search for `[`.
 - No third-party logos: text wordmarks only.
 - Every CTA uses `mailto:me@adampang.com?subject=Company%20University` (the `MAILTO` constant in `content.ts`).
 ```
+
+Read `ECOSYSTEM.md` first: the shared constitution for the talent trifecta (company.university = the academy, darktalent.tech = the scout and stats engine, skill.supply = the transfer market). It is the same file in all three repos.
 <!-- END:imported-claude-context -->

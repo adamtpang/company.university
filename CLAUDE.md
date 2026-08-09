@@ -93,3 +93,5 @@ All in `content.ts`. Search for `[`.
 - No third-party logos: text wordmarks only.
 - Every CTA uses `mailto:me@adampang.com?subject=Company%20University` (the `MAILTO` constant in `content.ts`).
 ```
+
+Read `ECOSYSTEM.md` first: the shared constitution for the talent trifecta (company.university = the academy, darktalent.tech = the scout and stats engine, skill.supply = the transfer market). It is the same file in all three repos.

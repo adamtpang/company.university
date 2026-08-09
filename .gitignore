@@ -23,5 +23,10 @@ next-env.d.ts
 # parked v1 files, safe to delete
 /_superseded
 
+# private sales pipeline + internal playbook + dream team, local only
+/sales
+/playbook
+/.anchor
+
 
 .vercel
