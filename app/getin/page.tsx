@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "How to get in · Company University",
   description:
     "How people actually enter the world's best companies: the door, the bar, the pattern, and the first-principles artifact path for Anthropic, OpenAI, Vercel, Ramp, Stripe and more.",
+  alternates: {
+    canonical: `${content.url}/getin`,
+  },
 };
 
 const TH =

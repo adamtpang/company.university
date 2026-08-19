@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "The University Layer · Company University",
   description:
     "Every company gets a school. The world's top companies, ranked by market cap, each an open college at Network School.",
+  alternates: {
+    canonical: `${content.url}/board`,
+  },
 };
 
 export default function BoardPage() {

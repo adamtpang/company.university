@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Privacy policy · Company University",
   description:
     "How Company University collects, uses, and protects your information.",
+  alternates: {
+    canonical: `${content.url}/privacy`,
+  },
 };
 
 const NAV = [

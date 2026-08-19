@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Terms of service · Company University",
   description:
     "The terms that govern your use of Company University and its programs.",
+  alternates: {
+    canonical: `${content.url}/terms`,
+  },
 };
 
 const NAV = [

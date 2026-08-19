@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "The Skill Market · Company University",
   description:
     "The most in-demand skills, ranked by a demand score built from growth, pay, and talent scarcity. Earn the cert, get matched to a company on the board.",
+  alternates: {
+    canonical: `${content.url}/skills`,
+  },
 };
 
 export default function SkillsPage() {

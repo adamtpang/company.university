@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "The Pilot · Company University",
   description:
     "The 6-week Company College pilot: $60,000. Curriculum built around your product, a weekly cohort at Network School, a flagship demo day, and a hiring funnel from the graduates.",
+  alternates: {
+    canonical: `${content.url}/pilot`,
+  },
 };
 
 const NAV = [

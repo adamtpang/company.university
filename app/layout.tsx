@@ -29,6 +29,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(content.url),
   title: "Company University · Every company gets a school",
   description: content.description,
+  alternates: {
+    canonical: content.url,
+  },
   openGraph: {
     title: "Company University",
     description: content.description,
@@ -51,7 +54,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "EducationalOrganization",
+      "@type": ["EducationalOrganization", "Organization"],
       "@id": `${content.url}#organization`,
       name: content.name,
       url: content.url,
@@ -70,6 +73,7 @@ const jsonLd = {
       name: content.name,
       description: content.description,
       publisher: { "@id": `${content.url}#organization` },
+      author: { "@id": `${content.url}#organization` },
     },
   ],
 };
