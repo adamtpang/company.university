@@ -111,8 +111,8 @@ export default function TermsPage() {
           <p>
             Company University is an independent education program operated by a
             United States limited liability company. It runs company specific
-            schools and cohorts, including at Network School in Forest City, near
-            Singapore. You can reach us at {content.email}.
+            schools and cohorts, including at Network School. You can reach us
+            at {content.email}.
           </p>
         </Section>
 

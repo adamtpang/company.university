@@ -300,7 +300,7 @@ export const content = {
       {
         name: "Adam Pang",
         role: "Program lead",
-        bio: "23. Runs company education programs at Network School, Balaji Srinivasan’s live/work campus in Forest City, 40 minutes from Singapore.",
+        bio: "Runs company education programs at Network School.",
         linkLabel: "adampang.com",
         linkHref: "https://adampang.com",
       },
@@ -488,7 +488,7 @@ export const content = {
     sub: "One email starts it. The first workshop is free.",
     cta: "Claim your college",
     smallPrint: [
-      "An independent program at Network School · Forest City, near Singapore",
+      "An independent program at Network School",
       "© 2026 Company University",
     ],
   },

@@ -60,11 +60,6 @@ const jsonLd = {
       url: content.url,
       description: content.description,
       slogan: "Every company gets a school.",
-      location: {
-        "@type": "Place",
-        name: "Network School",
-        address: "Forest City, near Singapore",
-      },
     },
     {
       "@type": "WebSite",

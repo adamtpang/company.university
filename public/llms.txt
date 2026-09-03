@@ -2,7 +2,7 @@
 
 > Every company gets a school: the university layer for top companies, hosted at Network School.
 
-Company University runs a company's education-to-employment pipeline for them. Each partner company gets a college inside Network School, Balaji Srinivasan's live/work campus in Forest City, about 40 minutes from Singapore. Education goes in; power users, advocates, and hires come out. Weekly hands-on classes manufacture power users, a permanent campus presence gives APAC reach, beta pools and feedback nights feed product research, and a flagship demo day doubles as a recruiting funnel. The company spends 30 minutes a month; the program runs curriculum, ops, rooms, and follow-up.
+Company University runs a company's education-to-employment pipeline for them. Each partner company gets a college inside Network School. Education goes in; power users, advocates, and hires come out. Weekly hands-on classes manufacture power users, a permanent campus presence gives APAC reach, beta pools and feedback nights feed product research, and a flagship demo day doubles as a recruiting funnel. The company spends 30 minutes a month; the program runs curriculum, ops, rooms, and follow-up.
 
 This is a single marketing site plus a ranked board, not a product with logins. It is early: pilots are live (Zcash School, funded under Zcash community grants) and in motion (Notion College), with a few more companies in talks. The pitch is to rent the whole layer instead of building five teams. Every CTA opens an email to me@adampang.com.
 
