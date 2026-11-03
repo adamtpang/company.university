@@ -39,6 +39,7 @@ npx vercel deploy --prod --yes
 | Scroll-reveal animation | `components/Reveal.tsx` |
 | Social card (OG image) | `app/opengraph-image.tsx` |
 | Favicon | `app/icon.svg` |
+| Idea notes (not shipped) | [`ideas/`](ideas/README.md) |
 
 ## Placeholders to fill
 
